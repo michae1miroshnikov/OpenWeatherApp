@@ -6,19 +6,61 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		49A329142D809D7800DB2683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D8DE212D7212A80019E896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D8DE282D7212A80019E896;
+			remoteInfo = NewApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		49A329102D809D7800DB2683 /* NewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D8DE292D7212A80019E896 /* NewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		49A329332D80A58300DB2683 /* Exceptions for "NewApp" folder in "NewAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/AirPollutionResponse.swift,
+				Model/ForecastResponse.swift,
+				Model/LocationManager.swift,
+				Model/ResponseBody.swift,
+				Model/SearchedCity.swift,
+				Model/URLSessionProtocol.swift,
+				Model/WeatherManager.swift,
+			);
+			target = 49A3290F2D809D7800DB2683 /* NewAppTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		49A329112D809D7800DB2683 /* NewAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NewAppTests;
+			sourceTree = "<group>";
+		};
 		49D8DE2B2D7212A80019E896 /* NewApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				49A329332D80A58300DB2683 /* Exceptions for "NewApp" folder in "NewAppTests" target */,
+			);
 			path = NewApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49A3290D2D809D7800DB2683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49D8DE262D7212A80019E896 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				49D8DE2B2D7212A80019E896 /* NewApp */,
+				49A329112D809D7800DB2683 /* NewAppTests */,
 				49D8DE2A2D7212A80019E896 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				49D8DE292D7212A80019E896 /* NewApp.app */,
+				49A329102D809D7800DB2683 /* NewAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +92,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49A3290F2D809D7800DB2683 /* NewAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A329162D809D7800DB2683 /* Build configuration list for PBXNativeTarget "NewAppTests" */;
+			buildPhases = (
+				49A3290C2D809D7800DB2683 /* Sources */,
+				49A3290D2D809D7800DB2683 /* Frameworks */,
+				49A3290E2D809D7800DB2683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A329152D809D7800DB2683 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				49A329112D809D7800DB2683 /* NewAppTests */,
+			);
+			name = NewAppTests;
+			packageProductDependencies = (
+			);
+			productName = NewAppTests;
+			productReference = 49A329102D809D7800DB2683 /* NewAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49D8DE282D7212A80019E896 /* NewApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49D8DE372D7212A90019E896 /* Build configuration list for PBXNativeTarget "NewApp" */;
@@ -80,6 +147,10 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					49A3290F2D809D7800DB2683 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 49D8DE282D7212A80019E896;
+					};
 					49D8DE282D7212A80019E896 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +171,19 @@
 			projectRoot = "";
 			targets = (
 				49D8DE282D7212A80019E896 /* NewApp */,
+				49A3290F2D809D7800DB2683 /* NewAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49A3290E2D809D7800DB2683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49D8DE272D7212A80019E896 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +194,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49A3290C2D809D7800DB2683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49D8DE252D7212A80019E896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +210,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		49A329152D809D7800DB2683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D8DE282D7212A80019E896 /* NewApp */;
+			targetProxy = 49A329142D809D7800DB2683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		49A329172D809D7800DB2683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QMD8BLY8VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.NewAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewApp";
+			};
+			name = Debug;
+		};
+		49A329182D809D7800DB2683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QMD8BLY8VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.NewAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewApp";
+			};
+			name = Release;
+		};
 		49D8DE352D7212A90019E896 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -255,11 +385,14 @@
 				DEVELOPMENT_TEAM = QMD8BLY8VV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the weather.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +417,14 @@
 				DEVELOPMENT_TEAM = QMD8BLY8VV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the weather.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		49A329162D809D7800DB2683 /* Build configuration list for PBXNativeTarget "NewAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A329172D809D7800DB2683 /* Debug */,
+				49A329182D809D7800DB2683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49D8DE242D7212A80019E896 /* Build configuration list for PBXProject "NewApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
