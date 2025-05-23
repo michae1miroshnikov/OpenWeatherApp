@@ -15,4 +15,4 @@ CoreLocation + geocoding support
 Clone the repo and open in Xcode:
 git clone https://github.com/michae1miroshnikov/OpenWeatherApp.git
 📬 Contact
-Made by Mykhailo Miroshnikov
+Made by Mykhailo Miroshnikov,https://www.linkedin.com/in/miroshnikov-mykhailo-b2a1a9342/
